@@ -2,7 +2,7 @@ var http = require('http')
 var serve = require('ecstatic')
 var open = require('opener')
 
-var PORT = 3001
+var PORT = process.env.PORT || 3001
 
 exports.init = function() {
   http.createServer(
